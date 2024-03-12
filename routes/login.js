@@ -12,7 +12,7 @@ process.on("unhandledRejection", (reason, promise) => {
   // Handle the error appropriately
 });
 
-loginRoutes.route("/").post(verifyToken, async function (req, res) {
+loginRoutes.route("/").post( async function (req, res) {
   try {
     const { email, password } = req.body;
 
